@@ -22,7 +22,9 @@ public class Contador {
 		//validar se parametroUm é MAIOR que parametroDois e lançar a exceção
         if(parametroUm > parametroDois){
             throw new ParametrosInvalidosException();
-            
+          
+        } else if(parametroUm == parametroDois){
+            System.out.println("Os dois parâmetros são iguais, então não tem contagem.");
         }
 		
 		int contagem = parametroDois - parametroUm;
